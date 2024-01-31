@@ -10,17 +10,5 @@ resource "aws_instance" "one" {
     Name = var.instance_name
   }
 }
-  module "s3_bucket" {
-  source = "terraform-aws-modules/s3-bucket/aws"
-
-  bucket = "mys3bucket"
-  acl    = "private"
-
-  control_object_ownership = true
-  object_ownership         = "ObjectWriter"
-
-  versioning = {
-    enabled = true
-  }
-}
+  
 
