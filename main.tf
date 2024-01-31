@@ -9,6 +9,7 @@ resource "aws_instance" "one" {
   tags = {
     Name = var.instance_name
   }
+}
   module "s3_bucket" {
   source = "terraform-aws-modules/s3-bucket/aws"
 
@@ -22,4 +23,4 @@ resource "aws_instance" "one" {
     enabled = true
   }
 }
-}
+
