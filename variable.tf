@@ -18,3 +18,7 @@ variable "instance_name" {
   type    = string
   default = "dev-server"
 }
+variable "key_name" {
+  type    = string
+  default = "amazonkeypair"
+}
